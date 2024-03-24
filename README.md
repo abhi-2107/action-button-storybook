@@ -1,6 +1,7 @@
 ## React Developer - Action Button
 
->To run locally
+> To run locally
+
 1.  **clone this repo**
 2.  **npm install**
 3.  **npm run storybook**
@@ -13,9 +14,9 @@
 3. icon - takes class from _Phosphor icons_ for desired icon
 4. display - type of button in _icon-only, text-only, defult_ appearance
 5. size - size of button _default, small, X-small_
-6. hover - takes boolean value
-7. disable - takes boolean value
+6. disable - takes boolean value
+7. onClick - action _clicked_
 
 > To view a live demonstration of storybook, please click the link below..
 >
->https://react-action-button-storybook.netlify.app/?path=/docs/example-mybutton--docs
+> https://react-action-button-storybook.netlify.app/?path=/docs/example-mybutton--docs

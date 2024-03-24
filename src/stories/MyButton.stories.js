@@ -7,6 +7,7 @@ export default {
   component: MyButton,
   tags: ["autodocs"],
   argTypes: {
+    onClick: { action: "clicked" },
     display: {
       options: ["default", "icon only", "text only"],
       control: { type: "radio" },
@@ -26,9 +27,7 @@ export default {
       control: { type: "radio" },
       description: "select the size of button",
     },
-    hover: {
-      description: "select to see button in hover state",
-    },
+
     children: {
       description: "write  button text here",
     },
@@ -42,13 +41,22 @@ export const Default = {
     size: "default",
     display: "default",
     icon: "ph-user-circle",
-    hover: false,
     disable: false,
   },
 };
-// export const size = {
-//   args: {
-//     size: "small",
-//     children: "small button",
-//   },
-// };
+export const small = {
+  args: {
+    size: "sm",
+    type: "neutral",
+    children: "Action",
+    icon: "ph-user-circle",
+  },
+};
+export const Xsmall = {
+  args: {
+    size: "xsm",
+    type: "reverse",
+    children: "Action",
+    icon: "ph-user-circle",
+  },
+};

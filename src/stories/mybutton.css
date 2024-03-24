@@ -13,7 +13,10 @@
   color: #228b22;
   background-color: #fcfcfc;
 }
-.btn-default-hover {
+.btn-default:active {
+  transform: scale(0.98);
+}
+.btn-default:hover {
   color: #228b22;
   background-color: #eeffee;
 }
@@ -26,7 +29,10 @@
   color: black;
   background-color: #fcfcfc;
 }
-.btn-neutral-hover {
+.btn-neutral:active {
+  transform: scale(0.98);
+}
+.btn-neutral:hover {
   color: black;
   background-color: #f2f2f2;
 }
@@ -39,7 +45,10 @@
   color: white;
   background-color: black;
 }
-.btn-reverse-hover {
+.btn-reverse:active {
+  transform: scale(0.98);
+}
+.btn-reverse:hover {
   color: white;
   background-color: #4b4b4b;
 }

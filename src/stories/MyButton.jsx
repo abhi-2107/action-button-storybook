@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import "./mybutton.css";
 
-function MyButton({ children, type, icon, display, size, hover, disable }) {
+function MyButton({ children, type, icon, display, size, disable,onClick }) {
   return (
     <button
       type="button"
@@ -11,9 +11,9 @@ function MyButton({ children, type, icon, display, size, hover, disable }) {
         "btn",
         { [`btn-${type}`]: true },
         {[`size-${size}`]: true},
-        {[`btn-${type}-hover`] : hover == true},
         {[`btn-${type}-disabled`] : disable == true},
       )}
+      onClick={onClick}
       disabled = {disable}
     >
       {display == "text only" || (
@@ -33,14 +33,3 @@ function MyButton({ children, type, icon, display, size, hover, disable }) {
 
 export default MyButton;
 
-// MyButton.PropTypes = {
-//   children: PropTypes.string,
-//   /**
-//    * How large should the button be?
-//    */
-//   type: PropTypes.oneOf(["small", "medium", "large"]),
-//   icon: PropTypes.bool,
-
-//   size: PropTypes.oneOf(["small", "medium", "large"]),
-//   color: PropTypes.string,
-// };
